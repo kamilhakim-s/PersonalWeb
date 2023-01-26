@@ -4,7 +4,7 @@ async function uni() {
       if (resp.ok) {
         let txt = "Looks like you are from "
         const uni = await resp.text()
-        if (uni.toLowerCase().includes("vanderbilt")) txt += "Vanderbilt too"
+        if (uni.toLowerCase().includes("vanderbilt")) txt += "Vanderbilt University"
         else txt += uni.startsWith("University") ? `the ${uni}` : `${uni}`
         txt += ", nice."
         document.getElementById("uni").innerHTML += txt;
